@@ -8,7 +8,6 @@ test:
 
 lint:
 	python3 -m autopep8 --in-place *.py
-	cd tests && python3 -m autopep8 --in-place *.py
 
 doc:
 	cd docs && make html
@@ -25,4 +24,4 @@ clean:
 	rm -rf tests/.coverage
 
 install:
-	python3 -m pip install -r ../requirements.txt
+	python3 -m pip install -r requirements.txt
